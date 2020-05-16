@@ -1,4 +1,7 @@
 <section>
-  <h4 class="headline">Title:<span><%= @book.title %></span></h2>
-  <h4 class="headline">Body:<span><%= @book.body %></span></h2>
+  <span class="column">Title:</span><span><%= @book.title %></span><br>
+  <span class="column">Body:</span><span><%= @book.body %></span><br>
+  <%= link_to 'Edit', edit_book_path(@book.id) %>
+  <span>|</span>
+  <%= link_to 'Back', books_path %>
 </section>
