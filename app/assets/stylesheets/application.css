@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.books, .new-book {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.headline {
+  padding:16px 0;
+}
+
+.form-button {
+  display: block;
+}
