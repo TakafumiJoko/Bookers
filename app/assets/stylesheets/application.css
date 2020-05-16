@@ -19,7 +19,11 @@
   box-sizing: border-box;
 }
 
-.books, .new-book {
+a {
+  color: #000;  
+}
+
+section {
   width: 90%;
   margin: 0 auto;
 }
