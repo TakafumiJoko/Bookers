@@ -27,16 +27,16 @@ th, td {
   padding: 0 8px
 }
 
-section {
+body {
   width: 90%;
-  margin: 0 auto;
+  margin: 16px auto;
 }
 
 .headline {
   padding:16px 0;
 }
 
-.form-button {
+.btn {
   display: block;
 }
 
@@ -44,4 +44,8 @@ section {
   display: inline-block;
   padding: 16px;
   font-weight: bold;
+}
+
+.notifications {
+  color :green;
 }

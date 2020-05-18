@@ -1,6 +1,7 @@
 <section>
   <h1 class="headline">Editing Book</h1>
   <%= form_for @book, url:"/books/#{@book.id}" do |f| %>
+  <%= render 'layouts/error_messages', model: f.object %>
     <h4 class="form-title">Title</h4>
     <%= f.text_field :title %>
     
@@ -9,7 +10,7 @@
     
     <span class="form-button"><%= f.submit 'Update Book' %></span>
   <% end %>
-  <%= link_to 'Edit', edit_book_path(@book.id) %>
+  <%= link_to 'Show', "/books/#{@book.id}" %>
   <span>|</span>
   <%= link_to 'Back', books_path %>
 </section>

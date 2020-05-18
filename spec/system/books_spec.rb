@@ -61,7 +61,7 @@ describe '投稿のテスト' do
       end
       it '投稿に失敗する' do
         click_button 'Create Book'
-        expect(page).to have_content 'error'
+        expect(page).to have_content 'error' 
         expect(current_path).to eq('/books')
       end
       it '投稿後のリダイレクト先は正しいか' do
@@ -153,7 +153,7 @@ describe '投稿のテスト' do
         fill_in 'book[title]', with: ""
         fill_in 'book[body]', with: ""
         click_button 'Update Book'
-        expect(page).to have_content 'error'
+        expect(page).to have_content 'error' 
       end
       it '更新後のリダイレクト先は正しいか' do
         fill_in 'book[title]', with: Faker::Lorem.characters(number:5)
